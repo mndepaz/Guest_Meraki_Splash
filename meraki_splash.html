@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest WiFi Access Request</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+    .box {
+      background: #fff;
+      max-width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      text-align: center; /* Center all text */
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      background: #2f6fed;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>Guest WiFi Request</h2>
+
+    <form action="https://script.google.com/a/macros/primergrp.com/s/AKfycbxtk1iRaOHYek7pvAbrBFQXqfrGoP7pTeod5P3rpGQsFxDLkXCRtDTmX_SyXyudL2mJ9Q/exec" method="post">
+      <input name="name" placeholder="Full Name" required>
+      <input name="email" type="email" placeholder="Email Address" required>
+      <input name="company" placeholder="Company / Purpose" required>
+
+      <button type="submit">Request Access</button>
+    </form>
+  </div>
+</body>
+</html>
