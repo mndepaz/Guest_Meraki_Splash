@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guest WiFi Access Request</title>
+  <style>
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+      /* Background image */
+      background: url('https://i.imgur.com/rDC5VAp.jpeg') no-repeat center center fixed;
+      background-size: cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff; /* default white text */
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.7); /* more opaque dark background for readability */
+      width: 100%;
+      max-width: 450px;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    h1.primer-header {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffffff; /* solid white */
+      text-shadow: 1px 1px 4px #000; /* subtle shadow for depth */
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #ffffff; /* solid white */
+    }
+
+    form input {
+      width: 100%;
+      padding: 14px 15px;
+      margin-bottom: 15px;
+      border: 2px solid #ffffff; /* solid white border */
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: rgba(255,255,255,0.1); /* slightly transparent */
+      color: #ffffff; /* input text white */
+    }
+
+    form input::placeholder {
+      color: #ffffff; /* placeholder white */
+      opacity: 0.8;
+    }
+
+    form input:focus {
+      border-color: #ffcc00; /* bright accent on focus */
+      box-shadow: 0 0 6px rgba(255,204,0,0.6);
+      outline: none;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffff; /* white button */
+      color: #000; /* black text for contrast */
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    form button:hover {
+      background-color: #e6e6e6;
+      transform: translateY(-2px);
+    }
+
+    p.confirmation {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ffffff; /* solid white confirmation text */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1 class="primer-header">Primer Group of Companies</h1>
+    <h2>Guest WiFi Request</h2>
+
+    <form action="https://script.google.com/a/macros/primergrp.com/s/AKfycbxUX3HoTPILx4LkoeuHx9DufajJID-X5rCh4amBYYNcWB-0-HFrWupGUxuo3hK8i7uLlQ/exec"
+          method="post">
+      <input name="name" placeholder="Full Name" required>
+      <input name="email" type="email" placeholder="Email Address" required>
+      <input name="company" placeholder="Company / Purpose" required>
+      <button type="submit">Request Access</button>
+    </form>
+
+    <p class="confirmation">
+      After submitting, you will see a confirmation page.
+    </p>
+  </div>
+</body>
+</html>
